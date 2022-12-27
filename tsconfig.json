@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "jsx": "react-native",
+    "lib": ["es2017"],
+    "types": ["react-native", "jest"],
+    "moduleResolution": "node",
+    "noEmit": true,
+    "strict": true,
+    "target": "esnext",
+    "baseUrl": ".",
+    "paths": {
+      "@assets": ["./src/assets"],
+      "@assets/*": ["./src/assets/*"],
+      "@utils": ["./src/core/utils"],
+      "@utils/*": ["./src/core/utils/*"],
+      "@request": ["./src/core/http/request"],
+      "@swr": ["./src/core/http/swr"],
+      "@url": ["./src/core/http/url"],
+      "@components": ["./src/presentation/components"],
+      "@atoms": ["./src/presentation/components/atoms"],
+      "@atoms/*": ["./src/presentation/components/atoms/*"],
+      "@molecules": ["./src/presentation/components/molecules"],
+      "@molecules/*": ["./src/presentation/components/molecules/*"],
+      "@organisms": ["./src/presentation/components/organisms"],
+      "@organisms/*": ["./src/presentation/components/organisms/*"],
+      "@templates": ["./src/presentation/components/templates"],
+      "@templates/*": ["./src/presentation/components/templates/*"],
+      "@navigation": ["./src/navigation"],
+      "@navigation/*": ["./src/navigation/*"],
+      "@pages": ["./src/presentation/pages"],
+      "@contexts": ["./src/services/contexts"],
+      "@contexts/*": ["./src/services/contexts/*"],
+      "@hooks": ["./src/services/hooks"],
+      "@hooks/*": ["./src/services/hooks/*"],
+      "@i18n": ["./src/i18n"],
+      "@i18n/*": ["./src/i18n/*"]
+    }
+  },
+  "include": [".*.js", "**/*.js", "**/*.ts", "**/*.tsx"],
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js"
+  ]
+}
